@@ -1,0 +1,16 @@
+[
+    {
+        "timestamp": "2026-10-17 16:58:09",
+        "masked": 18,
+        "unmasked": 1,
+        "incorrect": 0,
+        "compliance": 94.74
+    },
+    {
+        "timestamp": "2026-10-17 17:12:51",
+        "masked": 285,
+        "unmasked": 623,
+        "incorrect": 51,
+        "compliance": 29.72
+    }
+]
