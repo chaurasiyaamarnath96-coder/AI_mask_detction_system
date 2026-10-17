@@ -5,8 +5,12 @@ import os
 from pathlib import Path
 from utils.logger import save_detection_log
 
-model = YOLO("C:\\Projects\\Musk_Detection\\backend\\models\\best 1.pt")
+from ultralytics import YOLO
+from pathlib import Path
 
+MODEL_PATH = Path(__file__).resolve().parent.parent / "models" / "best 1.pt"
+
+model = YOLO(str(MODEL_PATH))
 
 def predict_image(image_path):
 
