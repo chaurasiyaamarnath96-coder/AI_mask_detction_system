@@ -36,7 +36,7 @@ if video:
             video.seek(0)
 
             response = requests.post(
-                "http://127.0.0.1:8000/predict-video",
+                "https://ai-mask-detction-system-1.onrender.com/predict-video",
                 files={
                     "file": (
                         video.name,

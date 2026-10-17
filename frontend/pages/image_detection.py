@@ -37,7 +37,7 @@ if file:
     }
     file.seek(0)  # Reset the file pointer to the beginning
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://ai-mask-detction-system-1.onrender.com/predict",
         files=files
     )
 

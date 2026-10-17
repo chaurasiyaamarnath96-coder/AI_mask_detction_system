@@ -6,7 +6,7 @@ import plotly.express as px
 st.title("📊 Compliance Analytics")
 
 response = requests.get(
-    "http://127.0.0.1:8000/logs"
+    "https://ai-mask-detction-system-1.onrender.com"
 )
 
 logs = response.json()
