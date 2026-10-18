@@ -10,7 +10,7 @@ from streamlit_webrtc import (
     VideoProcessorBase
 )
 
-API_URL = "http://127.0.0.1:8000/predict-frame"
+API_URL = "https://ai-mask-detction-system-1.onrender.com/predict-frame"
 
 
 class VideoProcessor(VideoProcessorBase):

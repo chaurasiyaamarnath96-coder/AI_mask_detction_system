@@ -6,7 +6,7 @@ import plotly.express as px
 st.title("📊 Compliance Analytics")
 
 response = requests.get(
-    "https://ai-mask-detction-system-1.onrender.com"
+    "https://ai-mask-detction-system-1.onrender.com/logs"
 )
 
 logs = response.json()
@@ -16,8 +16,10 @@ if not logs:
     st.warning("No analytics data available")
 
 else:
-
-    df = pd.DataFrame(logs)
+    if isinstance(logs,dict):
+        df = pd.DataFrame([logs])
+    else:
+        df = pd.DataFrame(logs)
 
     st.dataframe(df)
 
